@@ -1,0 +1,18 @@
+*{
+    color: red;
+}
+
+/*selektor łączony pozwala na połączenie np.. element.klasa = .klasa#id*/
+li.list-item {
+    color: green;
+}
+
+/*pseudoelementy to elementy, ktore nie istnieja w drzewie ale mozemy zamarkowac ich istnienie. Zapoisuejmy za pomoca podwojnego (: :) mozemy wstawiac za lub przed znacznikiem. Nie iestnieja dopoki nie ustawimy wlasciwosci content*/
+/*before i after należą do znacznika*/
+ul {
+    list-style: none;
+}
+/*z pseudoelementem*/
+.list-item::before {
+    content:'*';
+}
